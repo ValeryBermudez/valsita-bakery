@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valsita Supermarket</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-NYBx10+M9HZ3bYQz6hyGP6lw27KLLhOcAmrXuI8ve43tx3+/2+9DsoQ5RXSzXQBdzgVSfCndKNU1IopESz9z0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="productos.html" class="menu-item">Products</a>
+            <a href="recipes.html" class="menu-item">Recipes</a>
+            <div class="logo">
+                <img src="./img/Valsita logo.jpg" alt="Logo">
+            </div>
+            <a href="about.html" class="menu-item">About</a>
+            <a href="contact.html" class="menu-item">Contact</a>
+            <a href="buynow.html" class="menu-item">Buy now</a>
+        </div>
+        <div class="boxhead">
+            <h1>Valsita's bakery</h1>
+            <h3>Shopping Cart</h3>
+            <button class="cart-button" onclick="showShoppingCart()"><img src="/CSS/carrito.ico" alt=""></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="boxmain">
+            <h1>Cakes and Cookies</h1>
+        </div>
+        <ul id="productList"></ul>
+        <div class="boxfooter">
+            <h1>Drinks</h1>
+        </div>
+        </div>
+        <ul id="drinksList"></ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Valsita Supermarket</p>
+    </footer>
+    <!-- Links to your JavaScript files -->
+    <script src="./Javascript/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>

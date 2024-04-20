@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="productos.html" class="menu-item">Products</a>
+            <a href="recipes.html" class="menu-item">Recipes</a>
+            <div class="logo">
+                <img src="./img/Valsita logo.jpg" alt="Logo">
+            </div>
+            <a href="about.html" class="menu-item">About</a>
+            <a href="contact.html" class="menu-item">Contact</a>
+            <a href="buynow.html" class="menu-item">Buy now</a>
+        </div>
+        <div class="boxhead">
+            <h1>Valsita's bakery</h1>
+        </div>
+        <!-- Search bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="boxmain">
+            <h1>Cakes and Cookies</h1>
+        </div>
+        <ul id="productList"></ul>
+
+        <div class="boxfooter">
+            <h1>Drinks</h1>
+        </div>
+        <ul id="drinksList"></ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Valsita Supermarket</p>
+    </footer>
+
+    <script src="./Javascript/productos.js"></script>
+</body>
+</html>
