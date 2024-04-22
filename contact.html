@@ -24,6 +24,35 @@
     </header>
     <main>
         <section id="contact">
+            <div class="titulo">
+                <h4>Do you want to visit us?<h4>
+            </div>
+            <div class="botoncito">
+                <button class="map-button"><img src="./img/ubicacion.png" alt="Ubicación">Google Maps</button>
+            </div>
+            <div class="fondocontact">
+                <div class="textcontact">
+                    <p>If you want to ask something, write a message.</p>
+                </div>
+                <div class="container">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Name: ">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder ="Email: ">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone: ">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" placeholder="Message:"></textarea>
+                        </div>
+                        <button class="contact-button" onclick="scrollToContact()">CONTACT US</button>
+                    </form>
+                </div>
+            </div>
+            
         </section>
     </main>
     <script src="./Javascript/scripts.js"></script>
