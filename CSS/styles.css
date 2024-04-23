@@ -767,3 +767,8 @@ input[type="submit"]:hover {
     width: 90%;
     height: auto;
 }
+
+.custom-swal-popup{
+    width: 90%;
+    height: auto;
+}
