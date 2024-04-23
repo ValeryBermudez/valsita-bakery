@@ -1,4 +1,11 @@
 // Obtener la lista de productos del servidor
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+const apiUrl = 'https://fakestoreapi.com/products';
+
+fetch(proxyUrl + apiUrl)
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error fetching data:', error));
 fetch('http://localhost:3000/products')
     .then(response => response.json())
     .then(products => {
