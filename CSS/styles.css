@@ -7,33 +7,44 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color:rgb(0, 66, 54);
+    max-height: 100vh; 
+    overflow-y: auto;
+
 }
 main {
     margin-bottom: 850px;
 }
 footer {
-    position: absolute; 
-    bottom: -1200px;
-    width: 100%; 
-    background-color: rgb(0, 66, 54); 
-    padding: 20px;
+    position: relative; 
+    bottom: 300px;
+    width: 100%;
+    padding: 80px; 
     box-sizing: border-box; 
 }
+li{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
 p{
+    font-family: 'Times New Roman', Times, serif;
     color:rgb(255, 255, 255)
 }
 a{
+    font-family: 'Times New Roman', Times, serif;
     color:white
 }
 h1 {
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
 }
 h2{
+    font-family: 'Times New Roman', Times, serif;
     color:white;
 }
 h3{
+    font-family: 'Times New Roman', Times, serif;
     position: absolute;
     align-items: center;
     top: 50px;
@@ -44,11 +55,11 @@ h3{
 }
 
 h4 {
+    text-align: center;
     color: rgb(233, 226, 193);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     letter-spacing: 3px;
-    -webkit-text-stroke: 1px rgb(0, 66, 54);
 }
 
 /*Header and footer boxes*/
@@ -80,30 +91,30 @@ h4 {
 }
 
 .menu-item:hover {
-    Font: Arial;
+    font-family: 'Times New Roman', Times, serif;
     background-color:rgb(0, 66, 54);
 }
 
 .menufooter{
     display: flex;
     align-items: center;
-    font: Arial;
+    font-family: 'Times New Roman', Times, serif;
     grid-template-columns: repeat(4, auto);
-    gap: 300px;
+    gap: 250px;
     text-align: center;
     border-radius: 50px;
 
 }
 .contact-info{
-    margin-right: 150px;
+    margin-right: 10px;
 }
 .address{
     color: white;
 }
 .phone{
     color: rgb(233, 226, 193);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
     letter-spacing: 3px;
     -webkit-text-stroke: 1px rgb(0, 66, 54);
 }
@@ -111,21 +122,32 @@ h4 {
 /*Gifs*/
 .donas {
     bottom: -500px;
-    position: relative; /* Establece la posición relativa para que pueda desplazarse */
-    top: 500; /* Ajusta la posición vertical según sea necesario */
+    position: relative;
+    top: 650px;
     text-align: center;
     margin-bottom: 100px;
+    width: 100%;
 }
 
 .gif-nevado{
-    top: -110px;
-    bottom: 20px;
-    right: 20px;
+    position:absolute;
+    top: 1900px;
+    bottom: 10px;
+    right: 400px;
     z-index: 9999;
+    width: 40%;
+    height: auto;
 }
 .taste-the-original-cakes {
     text-align: center;
     margin-bottom: 20px;
+}
+.gif{
+    position:absolute;
+    top: 1000px;
+    bottom: 20px;
+    right: 480px;
+    z-index: 9999;
 }
 
 /* Botones */
@@ -155,51 +177,26 @@ main {
     text-align: center;
 }
 
-
-/*Search container */
+/* Search container */
 .search-container {
     display: flex;
     align-items: center;
     height: 50px;
-    width: 100px;
-    top: 50px;
-
+    width: 50%;     
+    margin-top: 20px; 
 }
-.search-container input[type="text"],
-.search-container button {
+
+.search-container input[type="text"] {
+    flex: 1; 
     margin-right: 10px;
-    right: 20px;
-    top: 50px;
-
 }
 
-
-/*Cart*/
-.cart-button {
-    position: absolute;
-    top: 50px;
-    margin-top:20px;
-    right:50px;
-    z-index: 999;
-    height: 60px;
-    width: 60px;
+.search-container button {
+    background-color: rgb(82, 138, 108);
+    color: white; 
     border: none;
-    border-color:rgb(0, 66, 54);
-    background-image: url('./carrito.ico');
-    background-color:rgb(0, 66, 54);
-    background-size: cover;
+    padding: 8px 12px;
 }
-.cart-button img {
-    max-width: 200%; 
-}
-
-.boxhead{
-    margin: 10px;
-    padding: 20px;
-    background-color:rgb(0, 66, 54);
-    border-radius: 15px;
-}
-
 
 /*Boxes*/
 .boxmain{
@@ -214,138 +211,7 @@ main {
     background-color:rgb(0, 66, 54);
     border-radius: 15px;
 }
-.boxcookies{
-    position: absolute;
-    margin: 10px;
-    padding: 10px;
-    top:500px;
-    right: 350px;
-    background-color:rgb(68, 135, 74);
-    border-radius: 70px;
-    height: 200px;
-    width: 600px;
-}
-.cookies img {
-    position: absolute;
-    top: 520px;
-    right: 1200px;;
-    width: 300px; /* Ajusta el ancho según lo necesites */
-    height: auto; /* Esto mantiene la proporción original */
-}
-.boxbiscuits{
-    position: absolute;
-    top: 790px;
-    right: 1000px;;
-    width: 300px; /* Ajusta el ancho según lo necesites */
-    background-color:rgb(68, 135, 74);
-    border-radius: 70px;
-    height: 200px;
-    width: 600px;
-}
-.biscuits img{
-    position: absolute;
-    top:790px;
-    right: 550px;
-    width: 300px; /* Ajusta el ancho según lo necesites */
-    height: auto; /* Esto mantiene la proporción original */
-}
-.boxpretzels{
-    position: absolute;
-    margin: 10px;
-    padding: 10px;
-    top:1150px;
-    right: 350px;
-    background-color:rgb(68, 135, 74);
-    border-radius: 70px;
-    height: 200px;
-    width: 600px;
-}
-.pretzels img{
-    position: absolute;
-    top: 1150px;
-    right: 1200px;
-    width: 300px; /* Ajusta el ancho según lo necesites */
-    height: auto; /* Esto mantiene la proporción original */
-}
-.boxitem1{
-    position: absolute;
-    top: 750px;
-    right: 1600px;
-    background-color:rgb(68, 135, 74);
-    border-radius: 100px;
-    height: 230px;
-    width: 190px;
-    text-align: center;
-}
-.boxitemcookie img {
-    position:absolute;
-    top: 40px;
-    right: -20px;
-    width: 250px;
-    height: auto;
-}
-.boxitem1 h5 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute; 
-    bottom: -200px;
-    width: 100%;
-    padding: 10px;
-    color: rgb(214, 209, 181);
-    font-size: 20px;
-    text-align: center;
-}
-.boxitem2{
-    position: absolute;
-    top: 750px;
-    right: 860px;
-    background-color:rgb(68, 135, 74);
-    border-radius: 100px;
-    height: 230px;
-    width: 190px;
-}
-.boxitembiscuits img {
-    position:absolute;
-    top: 40px;
-    right: -19px;
-    width: 250px;
-    height: auto;
-}
-.boxitem2 h5 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute; 
-    bottom: -200px;
-    width: 100%;
-    padding: 10px;
-    color: rgb(214, 209, 181);
-    font-size: 20px;
-    text-align: center;
-}
-.boxitem3{
-    position: absolute;
-    top: 750px;
-    right: 150px;
-    background-color:rgb(68, 135, 74);
-    border-radius: 100px;
-    height: 230px;
-    width: 190px;
-}
-.boxitempretzels img {
-    position:absolute;
-    top: 40px;
-    right: -10px;
-    width: 200px;
-    height: auto;
-}
-.boxitem3 h5 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: absolute; 
-    bottom: -200px;
-    width: 100%;
-    padding: 10px;
-    color: rgb(214, 209, 181);
-    font-size: 20px;
-    text-align: center;
-}
+
 /*Products*/
 #productList {
     list-style-type: none;
@@ -384,5 +250,520 @@ main {
 
 #drinksList li img {
     max-width: 100%; 
+    height: auto;
+}
+
+#product-content {
+    margin-bottom: 5px;
+}
+
+.product-footer {
+    top: -800px;
+    bottom: -40px;
+}
+
+#product-footer .logo img {
+    max-width: 100px;
+}
+
+#product-contact-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#product-contact-button img {
+    max-width: 100%; 
+}
+
+
+/*Recipes*/
+.boxcookies{
+    position: absolute;
+    margin: 10px;
+    padding: 10px;
+    top:500px;
+    right: 150px;
+    background-color:rgb(68, 135, 74);
+    border-radius: 70px;
+    height: 200px;
+    width: 600px;
+}
+.cookies img {
+    position: absolute;
+    top: 520px;
+    right: 800px;;
+    width: 300px; 
+    height: auto; 
+}
+.boxbiscuits{
+    position: absolute;
+    top: 790px;
+    right: 600px;;
+    width: 300px; 
+    background-color:rgb(68, 135, 74);
+    border-radius: 70px;
+    height: 200px;
+    width: 600px;
+}
+.biscuits img{
+    position: absolute;
+    top:790px;
+    right: 250px;
+    width: 300px; 
+    height: auto; 
+}
+.boxpretzels{
+    position: absolute;
+    margin: 10px;
+    padding: 10px;
+    top:1050px;
+    right: 150px;
+    background-color:rgb(68, 135, 74);
+    border-radius: 70px;
+    height: 200px;
+    width: 600px;
+}
+.pretzels img{
+    position: absolute;
+    top: 1050px;
+    right: 800px;
+    width: 250px; 
+    height: auto; 
+}
+.boxitem1{
+    position: absolute;
+    top: 750px;
+    right: 1000px;
+    background-color:rgb(68, 135, 74);
+    border-radius: 100px;
+    height: 230px;
+    width: 190px;
+}
+.boxitemcookie img {
+    position:absolute;
+    top: 40px;
+    right: -20px;
+    width: 250px;
+    height: auto;
+}
+.boxitem1 h5 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute; 
+    bottom: -200px;
+    width: 100%;
+    padding: 10px;
+    color: rgb(214, 209, 181);
+    font-size: 20px;
+    text-align: justify;
+}
+.boxitem2{
+    position: absolute;
+    top: 750px;
+    right: 570px;
+    background-color:rgb(68, 135, 74);
+    border-radius: 100px;
+    height: 230px;
+    width: 190px;
+}
+.boxitembiscuits img {
+    position:absolute;
+    top: 40px;
+    right: -19px;
+    width: 250px;
+    height: auto;
+}
+.boxitem2 h5 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute; 
+    bottom: -200px;
+    width: 100%;
+    padding: 10px;
+    color: rgb(214, 209, 181);
+    font-size: 20px;
+    text-align: justify;
+}
+.boxitem3{
+    position: absolute;
+    top: 750px;
+    right: 150px;
+    background-color:rgb(68, 135, 74);
+    border-radius: 100px;
+    height: 230px;
+    width: 190px;
+}
+.boxitempretzels img {
+    position:absolute;
+    top: 40px;
+    right: -10px;
+    width: 200px;
+    height: auto;
+}
+.boxitem3 h5 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute; 
+    bottom: -200px;
+    width: 100%;
+    padding: 10px;
+    color: rgb(214, 209, 181);
+    font-size: 20px;
+    text-align: justify;
+}
+.historyimg img{
+    position: absolute;
+    top: 1450px;
+    width: 300px;
+    height: 300px;
+    padding: 60px 60px;
+}
+.historyimg p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 1500px;
+    position: absolute; 
+    right: 700px;
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    color: rgb(214, 209, 181);
+    font-size: 20px;
+    text-align: justify;
+    z-index: 9999;
+}
+.historyimg2 img{
+    position: absolute;
+    top: 1450px;
+    right: 290px;
+    width: 300px;
+    height: 300px;
+    padding: 60px 60px;
+}
+.historyimg2 p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute; 
+    top: 1500px;
+    right: 70px;
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    color: rgb(214, 209, 181);
+    font-size: 20px;
+    text-align: justify;
+    z-index: 9999;
+}
+.recipes-footer{
+    top: 500px;
+    bottom: -100px;
+}
+
+/*About*/
+.aboutimg {
+    position: absolute;
+    top: 420px;
+    right: 1200px;
+    width: 40px; 
+    height: 60px;
+}
+.aboutimg p{
+    position: absolute;
+    right: -1040px;
+    width: 350px;
+    height: auto;
+    top: 100px;
+    color: rgb(214, 209, 181);
+    font-size: 20px;
+    z-index: 9999;
+    text-align: justify;
+}
+#counter {
+    position:absolute;
+    font-family: 'Times New Roman', Times, serif;
+    top:-10px;
+    right: -900px;
+    font-size: 100px;
+    font-weight: bold;
+    color: #ffeab4;
+    z-index: 9999;
+}
+.fondo {
+    position: absolute;
+    top: 1450px;
+    left: 0;
+    width: 100%; 
+    height: 90%;
+    background-color: rgb(40, 110, 97);; 
+    transform: translateY(-50%); 
+    z-index: -1; 
+    border-radius: 25% 25% 20% 20%;
+}
+.text h4{
+    position:absolute;
+    top: 1400px;
+    left: 290px;
+    transform: translateY(-50%); 
+    right: 300px;
+    z-index: 9999;
+}
+.text button{
+    top: 1600px;
+    left: 530px;
+    padding: 20px 70px;
+    color: white; 
+    border-radius: 40px; 
+    z-index: 9999;
+    background-color:rgb(0, 66, 54) ;
+}
+.about-footer{
+    top: 500px;
+    bottom: -100px;
+}
+/*Productos*/
+.contact img{
+    position: relative;
+    top: 100px;
+    max-width: 100%; 
+    height: 100%;
+}
+.contact{
+    position: relative;
+}
+.contact-button {
+    position: absolute; 
+    top: 480px; 
+    left: 530px; 
+    padding: 30px 100px;
+    background-color: rgb(40, 18, 4); 
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white; 
+    border: none; 
+    border-radius: 40px; 
+    cursor: pointer; 
+    z-index: 1;
+}
+
+/*Contact*/
+.titulo h4{
+    font-size: 80px;
+}
+.fondito {
+    position: relative;
+    top: 40px;
+    width: 70%;
+    height: 550px;
+    margin: 0 auto; 
+    background-color: #fdffdcce;
+    opacity: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.fondito h2{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 15px 20px;
+    width: 550px;
+    height: 500px;
+    z-index: 9999;
+    font-size: 40px;
+    color: rgb(0, 66, 54);
+    text-align: left;    
+}
+
+.fondito p{
+    position: absolute;
+    top: 200px;
+    left: 470px;
+    padding: 10px 10px;
+    width: 250px;
+    height: 500px;
+    z-index: 9999;
+    font-size: 30px;
+    color: rgb(0, 66, 54);
+    text-align: left; 
+}
+
+.fondito a{
+    position: absolute;
+    top: 350px;
+    left: 470px;
+    padding: 10px 10px;
+    width: 250px;
+    height: 500px;
+    z-index: 9999;
+    font-size: 30px;
+    color: rgb(0, 66, 54);
+    text-align: left;
+}
+.fondito img{
+    position: absolute;
+    top: 350px;
+    left: 650px;
+    z-index: 9999;
+    text-align: left;
+}
+
+.map-button {
+    background-color: #96cc99;
+    color: rgb(0, 66, 54); 
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.map-button img {
+    align-items: center;
+    vertical-align: middle;
+    margin-right: 5px; 
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+
+.map-button:hover {
+    background-color: #96cc99; 
+}
+
+.fondocontact {
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    width: 100%; 
+    height: 100%;
+    background-color: rgb(40, 110, 97);
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+.textcontact {
+    position: absolute;
+    top: -200px;
+    left: 20px;
+    padding: 15px 20px;
+    width: 550px;
+    height: 500px;
+    z-index: 9999;
+    font-size: 40px;
+    color: rgb(0, 66, 54); ;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    font-family: 'Times New Roman', Times, serif;
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+input[type="submit"] {
+    background-color: rgb(0, 66, 54);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos adicionales */
+#contact {
+    text-align: center;
+}
+
+.fondocontact {
+    background-color: transparent; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -50px;
+    width: 40%;
+    height: auto;
+}
+.fondocontact button {
+    background-color: rgb(0, 66, 54);;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.fondocontact button:hover {
+    background-color: rgb(0, 66, 54);;
+}
+.fondocontact img{
+    position:absolute;
+    top: 1000px;
+    bottom: 20px;
+    right: 900px;
+    z-index: 9999;
+}
+.body-contact{
+    max-height: 1000px;
+    overflow-y: auto; 
+}
+.footer-contact{
+    position: relative;
+    bottom: 100px;
+    width: 100%; 
+    padding: -450px;
+    box-sizing: border-box;
+}
+.contactico img{
+    position: relative;
+    top: 400px;
+    max-width: 100%; 
+    height: 100%;
+}
+
+
+/*Buy now*/
+/*Cart*/
+.buynow h3{
+    font-size: 10px;
+}
+.cart-button {
+    position: absolute;
+    top: 50px;
+    margin-top:20px;
+    right:50px;
+    z-index: 999;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-color:rgb(0, 66, 54);
+    background-image: url('./carrito.ico');
+    background-color:rgb(0, 66, 54);
+    background-size: cover;
+}
+.cart-button img {
+    max-width: 200%; 
+}
+
+.boxhead{
+    margin: 10px;
+    padding: 20px;
+    background-color:rgb(0, 66, 54);
+    border-radius: 15px;
+}
+
+.custom-swal-container {
+    width: 100%;
+}
+
+.custom-swal-popup{
+    width: 90%;
     height: auto;
 }
