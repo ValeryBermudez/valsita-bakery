@@ -28,33 +28,56 @@
                 <h4>Do you want to visit us?<h4>
             </div>
             <div class="botoncito">
-                <button class="map-button"><img src="./img/ubicacion.png" alt="Ubicación">Google Maps</button>
+                <button class="map-button"onclick="scrollToContact()"><img src="./img/ubicacion.png" alt="Ubicación">Google Maps</button>
             </div>
-            <div class="fondocontact">
-                <div class="textcontact">
-                    <p>If you want to ask something, write a message.</p>
-                </div>
-                <div class="container">
-                    <form action="#" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Name: ">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder ="Email: ">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Phone: ">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="4" placeholder="Message:"></textarea>
-                        </div>
-                        <button class="contact-button" onclick="scrollToContact()">CONTACT US</button>
+            <div class="fondito">
+                <h2>If you want to ask something, write a message.</h2>
+                <p>Valsita Street
+                    Val 3000
+                    NY, USA</p>
+                <a>+1(2) 3456 7890</a>
+                <img src="./img/donuts.png" alt="img">
+                <div class="fondocontact">
+                    <form action="process_form.php" method="post">
+                        <input type="text" id="name" name="name" placeholder="Name:"><br>
+                        <input type="email" id="email" name="email" placeholder="Email:"><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone:"><br>
+                        <textarea id="message" name="message" placeholder="Message:" rows="4" required></textarea><br>
+                        <button type="button" onclick="showConfirmation()">CONTACT US</button>
                     </form>
-                </div>
+                </div> 
+            </div> 
+            <div class="contactico">
+                <img src="./img/donas.gif" alt="img">
             </div>
-            
         </section>
     </main>
-    <script src="./Javascript/scripts.js"></script>
+
+    <footer>
+        <div class="menufooter">
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <div class="address">
+                    Valsita Street<br>
+                    Val 3000<br>
+                    NY, USA
+                </div>
+                <hr>
+                <div class="phone">
+                    +1(2) 3456 7890
+                </div>
+            </div>
+            <div class="logo">
+                <img src="./img/Valsita logo.jpg" alt="Logo">
+            </div>
+            <div class="menu-links">
+                <li><a href="contact.html" class="menu-item">Contact</a></li>
+                <br>
+                <li><a href="about.html" class="menu-item">About</a></li>
+            </div>
+        </div>
+        <p>&copy; 2024 Valsita Bakery</p>
+    </footer>
+    <script src="./Javascript/contact.js"></script>
 </body>
 </html>
