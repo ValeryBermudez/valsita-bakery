@@ -61,3 +61,8 @@ function appendProduct(product, list) {
 
     list.appendChild(listItem);
 }
+
+function scrollToContact() {
+    window.location.href = 'contact.html';
+}
+
