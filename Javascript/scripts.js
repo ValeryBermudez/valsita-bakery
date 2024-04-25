@@ -231,3 +231,6 @@ fetch('http://localhost:3000/products')
         option.textContent = addition.name + ' - $' + addition.price.toFixed(2);
         additionsSelect.appendChild(option);
         });
+function scrollToContact() {
+    window.location.href = 'contact.html';
+}
