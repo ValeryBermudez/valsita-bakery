@@ -232,7 +232,5 @@ fetch('http://localhost:3000/products')
         additionsSelect.appendChild(option);
         });
 }
-function scrollToIndex() {
-    window.location.href = 'index.html';
-}
+
 }
