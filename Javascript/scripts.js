@@ -231,11 +231,5 @@ fetch('http://localhost:3000/products')
         option.textContent = addition.name + ' - $' + addition.price.toFixed(2);
         additionsSelect.appendChild(option);
         });
-//index functions------------------------------------------------------------------------------------------------------------
-function scrollToRecipes() {
-    window.location.href = 'recipes.html';
-}
-function scrollToIndex() {
-    window.location.href = 'index.html';
-}
+
 }
