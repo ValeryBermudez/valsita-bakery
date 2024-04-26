@@ -1,3 +1,8 @@
+const productosRef = firebase.database().ref('productos');
+productosRef.on('value', (snapshot) => {
+  const productos = snapshot.val();
+  // Haz algo con los datos de los productos, como renderizarlos en tu página web
+});
 // Obtener la lista de productos del servidor
 // Obtener la lista de productos del servidor
 fetch('http://localhost:3000/products')
