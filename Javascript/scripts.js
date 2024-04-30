@@ -5,11 +5,11 @@ productosRef.on('value', (snapshot) => {
 });
 // Obtener la lista de productos del servidor
 // Obtener la lista de productos del servidor
-fetch('http://localhost:3000/products')
-    .then(response => response.json())
-    .then(products => {
-        const productList = document.getElementById('productList');
-        const drinksList = document.getElementById('drinksList'); 
+fetch('https://us-central1-tu-proyecto.cloudfunctions.net/getProducts')
+  .then(response => response.json())
+  .then(products => {
+    // Maneja los datos de los productos recibidos, por ejemplo, renderizándolos en tu página web
+  })
 
         products.forEach(product => {
             const listItem = document.createElement('li');
@@ -35,7 +35,7 @@ fetch('http://localhost:3000/products')
             }
         });
     })
-    .catch(error => console.error('Error al obtener la lista de productos:', error));
+  .catch(error => console.error('Error al obtener la lista de productos:', error));
 //Shopping cart
 
     let shoppingCart = [];
